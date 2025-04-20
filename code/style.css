@@ -1,0 +1,248 @@
+/* KCC-Hanbit 폰트 적용 */
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통 스타일 */
+body {
+    font-family: 'KCC-Hanbit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #131230;
+}
+
+header {
+    background-color: #A1CAE6; /* 중간 톤 하늘색 */
+    color: #131230; /* 네이비 컬러 */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px; /* 큰 글씨 크기 */
+    color: #131230; /* 네이비 컬러 */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #131230; /* 네이비 컬러 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff; /* 화이트 컬러 */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #131230; /* 네이비 컬러 */
+}
+
+h2 {
+    font-size: 28px; /* 배송지 입력 폰트 크기 조정 */
+    color: #131230; /* 네이비 컬러 */
+    margin-bottom: 20px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'KCC-Hanbit', sans-serif;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="password"]::placeholder {
+    color: #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #131230; /* 네이비 컬러 */
+    color: #ffffff; /* 화이트 컬러 */
+    border: none;
+    padding: 15px 25px; /* 버튼 크기 조정 */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* 버튼 글씨 크기 조정 */
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #333; /* 더 어두운 네이비 컬러 */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #ffffff; /* 화이트 컬러 */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #131230; /* 링크 색상 설정 */
+}
+
+.product a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+.product h3 {
+    margin: 15px 0;
+    color: #131230; /* 네이비 컬러 */
+}
+
+.product p {
+    margin: 0 0 10px;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.product-detail img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.product-detail div {
+    flex-grow: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #131230; /* 네이비 컬러 */
+    color: #ffffff; /* 화이트 컬러 */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 로그인 및 회원가입 폼 스타일 */
+.login-form, .register-form, .shipping-form, .profile-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form h1, .register-form h1, .shipping-form h1, .profile-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px; /* 입력 필드 간 간격 조정 */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 15px; /* 입력 필드 크기 조정 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="password"]::placeholder,
+.form-group input[type="email"]::placeholder {
+    color: #ccc;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #131230; /* 네이비 컬러 */
+    color: #ffffff; /* 화이트 컬러 */
+    border: none;
+    padding: 15px 25px; /* 버튼 크기 조정 */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* 버튼 글씨 크기 조정 */
+    width: 100%;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #333; /* 더 어두운 네이비 컬러 */
+}
